@@ -21,9 +21,6 @@ class CreateQuestionsTable extends Migration
 
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
-
-            $table->unsignedBigInteger('answer_right_id');
-            $table->foreign('answer_right_id')->references('id')->on('answers');
         });
     }
 
